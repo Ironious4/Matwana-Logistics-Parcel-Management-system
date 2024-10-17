@@ -1,0 +1,318 @@
+/* Ensure the html and body take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+.navbar {
+  background-color: white;
+  padding: 0px;
+  margin:0px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 2cm;
+  padding: 0px;
+  margin: 0px;
+}
+
+.heading {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 150px; /* Adjust according to logo size */
+  height: 77px;
+  margin-right: 10px;
+}
+
+
+.nav-links {
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  gap: 100px;
+  color: white;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
+}
+.home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #000;
+}
+.login-form, .signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+.footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1cm;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* src/components/HomePage.css */
+.home-page {
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://callaride.co.ke/wp-content/uploads/2022/10/call-a-ride-Truck.jpg');
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  display: flex; /* Flexbox for centering content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: 0;
+}
+/* Add a dark overlay on top of the background image */
+.home-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+/* Style the content inside the home page */
+.home-page h1, .home-page p {
+  position: relative; /* Ensure the text is above the overlay */
+  z-index: 2; /* Make sure the text appears above the overlay */
+}
+
+.home-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* src/components/GetQuote.css */
+/* .quote-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  max-width: 450px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 3;
+}
+
+.quote-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Add spacing between form groups */
+/* }
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.quote-form {
+  height:7cm;
+  width:5cm;
+}
+
+.quote-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.quote-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.quote-btn:hover {
+  background-color: #218838;
+} */ 
+/* src/components/GetQuote.css */
+
+/* src/components/GetQuote.css */
+.quote-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  padding-top: 0px;
+  max-width: 1000px; /* Increased width for horizontal layout */
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 3;
+  height: 3cm;
+  font-size: 1px;
+}
+
+.quote-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Horizontal form layout using flexbox */
+.quote-form {
+  display: flex;
+  justify-content: space-between; /* Ensure space between inputs */
+  flex-wrap: wrap; /* Ensure the form is responsive */
+  gap: 10px; /* Add space between form fields */
+  align-items: center;
+}
+
+.form-group {
+  flex: 1; /* Make each form field take up equal space */
+  min-width: 150px; /* Set a minimum width to prevent overflow on small screens */
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.quote-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Ensure the button is centered and spans across the full width when needed */
+.quote-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  flex: 1; /* Take full width for the button */
+  min-width: 200px;
+  flex-shrink: 0;
+}
+
+.quote-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .quote-form {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+
+
+
+
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
